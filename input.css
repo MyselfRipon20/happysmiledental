@@ -1,1 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Inter&family=Ubuntu&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
