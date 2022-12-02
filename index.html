@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="Assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon-16x16.png">
+    <link rel="manifest" href="Assets/site.webmanifest">
+    <title>Happy Smile Dental Clinic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/168ebc7feb.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css"
+    />
+  </head>
+  <body>
+    <!-- Small Devices  -->
+    <header
+      class="h-[60vh] w-full bg-[url('Images/HeroSmall.png')] bg-no-repeat bg-cover md:hidden lg:hidden"
+    >
+     <!-- Navigation Bar here   -->
+      <nav
+        class="bg-gradient-to-r from-blue-700 to-[#ffffff00] sticky py-2 px-2 flex justify-between shadow-lg backdrop-blur-md z-50"
+      >
+        <div>
+          <p class="font-Inter font-bold lg:text-lg text-white">HappySmile</p>
+          <p class="font-Ubuntu text-xs font-semibold lg:text-sm text-slate-200">
+            We care for your smile
+          </p>
+        </div>
+        <div class="flex">
+          <ul class="flex text-white font-mono gap-x-1 lg:mr-8">
+            <li
+              class="lg:mx-4 py-2 hover:underline transition-all ease-in hover:text-slate-200"
+            >
+              <a class="rounded-3xl bg-blue-500 px-2 py-1 lg:px-4 lg:py-2 text-[10px] lg:text-base" href="#about">About Us</a>
+            </li>
+            <li
+              class="lg:mx-4 py-2 hover:underline transition-all ease-in hover:text-slate-200"
+            >
+              <a class="rounded-3xl bg-blue-500 px-2 py-1 lg:px-4 lg:py-2 text-[10px] lg:text-base" href="#service">Services</a>
+            </li>
+            <li
+              class="lg:mx-4 py-2 hover:underline transition-all ease-in hover:text-slate-200"
+            >
+              <a class="rounded-3xl bg-blue-500 px-2 py-1 lg:px-4 lg:py-2 text-[10px] lg:text-base" href="#review">Reviews</a>
+            </li>
+            <li
+              class="lg:mx-4 py-2 hover:underline transition-all ease-in hover:text-slate-200"
+            >
+              <a class="rounded-3xl bg-blue-500 px-2 py-1 lg:px-4 lg:py-2 text-[10px] lg:text-base" href="#call">Contact</a>
+            </li>
+          </ul>
+        </div> 
+      </nav>
+
+      <!-- Hero section  -->
+      <div id="top" class="absolute top-36 lg:top-[30rem] left-16 lg:left-[29em] lg:z-10">
+        <div class="flex flex-col justify-center">
+          <p class="text-center text-2xl lg:text-6xl text-white font-semibold font-Baloobhai2 lg:mb-16 ">
+            A Better Life Starts with a <br />
+            Beautiful Smile
+          </p>
+        </div>
+        <div class="mt-28 ml-8">
+          <a href="#contact"
+            class="text-white m-auto bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-4 text-center mr-2 mb-2"
+          >
+          <i class="fa-regular fa-calendar-days fa-lg mx-2 text-center"></i>
+          Book an Appointment
+        </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- For large devices  -->
+    <header
+      class="hidden md:block lg:block h-[130vh] w-full bg-[url('Images/HeroS.png')] bg-no-repeat bg-cover"
+    >
+     <!-- Navigation Bar here  -->
+      <nav
+        class="bg-gradient-to-r from-blue-700 to-[#ffffff00] fixed py-2 w-full px-24 flex justify-between shadow-lg backdrop-blur-md z-50"
+      >
+        <div>
+          <p class="font-Inter font-bold text-lg text-white">HappySmile</p>
+          <p class="font-Ubuntu font-semibold text-sm text-slate-200">
+            We care for your smile
+          </p>
+        </div>
+        <div class="flex">
+          <ul class="flex text-white font-mono mr-8">
+            <li
+              class="mx-4 py-2 hover:underline transition-all ease-in hover:text-slate-200"
+            >
+              <a class="rounded-3xl bg-blue-500 px-4 py-2" href="#about">About Us</a>
+            </li>
+            <li
+              class="mx-4 py-2 hover:underline transition-all ease-in hover:text-slate-200"
+            >
+              <a class="rounded-3xl bg-blue-500 px-4 py-2" href="#services">Services</a>
+            </li>
+            <li
+              class="mx-4 py-2 hover:underline transition-all ease-in hover:text-slate-200"
+            >
+              <a class="rounded-3xl bg-blue-500 px-4 py-2" href="#reviews">Reviews</a>
+            </li>
+            <li
+              class="mx-4 py-2 hover:underline transition-all ease-in hover:text-slate-200"
+            >
+              <a class="rounded-3xl bg-blue-500 px-4 py-2" href="#call">Contact</a>
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="text-white bg-white hover:bg-slate-100 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+          >
+          <i class="fa-solid fa-phone px-2 "></i>
+            Call Me
+          </button>
+        </div> 
+      </nav>
+
+      <!-- Hero section  -->
+      <div id="home" class="absolute top-[30rem] left-[29em] z-10">
+        <div class="flex flex-col justify-center">
+          <p class="text-center text-6xl text-white font-semibold font-Baloobhai2 mb-16 ">
+            A Better Life Starts with a <br />
+            Beautiful Smile
+          </p>
+          <a href="#contact"
+            class="text-white flex items-center justify-center bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-4 text-center mr-2 mb-2"
+          >
+          <svg class="w-6 h-6 mx-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg> 
+          Book an Appointment
+        </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div id="about" class="about-section my-6 mx-4 lg:my-10 lg:mx-24">
+        <div>
+          <!-- Left Section  -->
+          <div class="lg:w-[45%]">
+            <h1 class="lg:text-5xl text-2xl font-bold font-serif my-2 lg:my-4">
+              Welcome to Happy Smile
+              Dental Clinic
+            </h1>
+            <p class="text-sm lg:text-base my-3">
+              I am very passionate about helping patients improve their oral health and achieve a beautiful smile. When people ask me why i enjoy being a dentist, i explain that i love to build personal relationships with my patients and treat the person, not just the tooth. I have been involved in dentistry most of my life.
+            </p>
+          </div>
+          <div class="lg:flex lg:justify-between">
+            <div class="lg:w-[40%] lg:my-12 px-5">
+              <div class="flex justify-center items-start my-4 lg:my-12">
+                <div class="mt-[6px] mr-4 text-[#1E6DFF] ">
+                  <i class="fa-solid fa-stethoscope fa-xl lg:fa-2xl mt-1"></i>
+                </div>
+                <div>
+                  <h5 class="text-lg lg:text-xl font-bold lg:font-semibold">Friendly Clinic Near You</h5>
+                  <p class="text-sm lg:text-base">We are always here to take care of your smile. Come at my clinic once and go with wear a smile.</p>
+                </div>
+              </div>
+  
+              <div class="flex justify-center items-start my-4 lg:my-12">
+                <div class="mt-[6px] mr-4 text-[#1E6DFF]">
+                  <i class="fa-solid fa-tooth fa-xl lg:fa-2xl mt-1"></i>
+                </div>
+                <div>
+                  <h5 class="text-lg lg:text-xl font-bold lg:font-semibold">Modern Dentist</h5>
+                  <p>A clean modern Dental Clinic with sophisticated technology. We provide painless treatment for all kind of oral and dental related problems.</p>
+                </div>
+              </div>
+              <div class="flex items-center text-[#1E6DFF] cursor-pointer text-sm ml-8">
+                <i class="fa-solid fa-location-dot"></i>
+                <a href="" class="px-2">
+                  <strong>View on Google Map</strong>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Section  -->
+            <div class="hidden md:hidden w-[50%] m-auto my-8 lg:flex lg:items-end lg:justify-end">
+              <img class="lg:relative w-44 lg:w-56 lg:left-52 lg:bottom-24 lg:z-30" src="Images/Doctor1.png" alt="HappySmile">
+              <img class="lg:w-52 h-32 lg:relative lg:bottom-7" src="Images/dotsx2.png" alt="HappySmile">
+              <img class="relative lg:top-12 lg:right-16 w-36 lg:w-52 lg:z-20" src="Images/Doctor2.png" alt="HappySmile">
+            </div>
+            <div class="w-3/4 m-auto lg:hidden p-4">
+              <img class="my-8" src="/Images/DRImran_sm.png" alt="HappySmile">
+            </div>
+          </div>
+    
+          <!-- Our Department  -->
+          <div class="flex flex-col justify-center items-center my-12">
+            <h2 class="text-2xl lg:text-4xl font-bold text-center font-serif">Our Clinic Department</h2>
+            <img class="lg:w-[32vw] w-64 border-8 rounded-md m-10 border-blue-500" src="Images/Clinic.png" alt="HappySmile">
+          </div>
+
+          <!-- About The Doctor  -->
+          <div class="lg:flex lg:justify-between">
+            <div class="hidden lg:flex my-10 w-1/2">
+              <img class="z-10 w-52 h-52" src="Images/Doctor3.png" alt="HappySmile">
+              <img class="w-44 h-40 relative right-10" src="Images/dotsx2.png" alt="HappySmile">
+              <img class="z-20 relative right-60 top-44 w-56 h-64" src="Images/Doctor4.png" alt="HappySmile">
+            </div>
+      
+            <div class="flex flex-col justify-start lg:w-[40%] lg:my-12 gap-y-6 px-4">
+              <h3 class="text-2xl font-bold">Committed To Dental Excellence</h3>
+              <h3 class="hidden text-4xl font-bold">Committed To Dental <br> Excellence</h3>
+              <h4 class="text-xl font-semibold text-slate-700">We Create Beautiful and Brighter Smiles</h4>
+              <p class="w-[90%] text-slate-600 text-sm font-medium">Our mission is to develop long-term relationships with our patients and to offer outstanding service through personalized, honest, ethical and conscious treatment. We aim to help people achieve excellent oral health care through our high quality, professional and cost-effective services. We strive to improve patient health and overall quality of life by customizing our dental treatment plans according to each individual’s oral health needs. Thank you for your trust in advance, we hope to smile together soon.</p>
+              <div class="my-8">
+                <h5 class="text-lg font-semibold">Dr. Imran Mondal</h5>
+                <p class="text-sm text-slate-600 italic w-[90%]">Senior House Surgeon, Dept. of Oral & Maxillofacial Surgery Burdwan Dental College and Hospital (Govt.)</p>
+              </div>
+            </div>
+            <div class="m-auto w-52 lg:hidden">
+              <img src="/Images/DRImran2_sm.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Section  -->
+      <section id="contact">
+        <div class="w-full lg:w-[85%] bg-gradient-to-r from-blue-500 to-blue-700 lg:flex lg:justify-between lg:mt-10 py-12">
+          <div class="lg:ml-24 py-10 lg:py-20 w-full lg:w-[50%] flex flex-col lg:items-start items-center place-content-start">
+            <h3 class="text-3xl lg:text-3xl font-serif text-white font-bold">New Patient</h3>
+            <p class="text-lg lg:text-xl font-semibold w-[70%] my-4 text-slate-200">Are you a new patient?  Don't worry we're here to care dental problems. Fill the form that given beside or just give a call.
+            </p>
+            <p class="text-xl lg:text-2xl text-white font-bold mt-4 lg:mt-10">NEED ASSISTANCE?</p>
+            <p class="text-sm lg:text-xl text-white font-semibold cursor-pointer hover:underline my-4">+916297524875</p>
+          </div>
+
+          <div class="lg:w-[50%] px-2 lg:py-20 lg:z-30">
+            <div class="px-2 py-8 flex flex-col lg:w-1/2 justify-center items-center bg-white rounded-xl shadow-2xl lg:relative lg:left-[26rem]">
+              <input class="bg-slate-200 my-2 border-none rounded-sm text-sm font-mono" type="text" placeholder="Your Name">
+              <input class="bg-slate-200 my-2 border-none rounded-sm text-sm font-mono" type="email" name="" id="" placeholder="Your Email">
+              <input class="bg-slate-200 my-2 border-none rounded-sm text-sm font-mono" type="text" name="" id="" placeholder="Your Phone Number">
+              <button class="py-2 px-6 border border-blue-500 rounded-md text-sm text-blue-500 font-semibold my-3 hover:bg-blue-500 hover:text-white hover:border-none">Submit</button>
+            </div>
+          </div>
+          <img class="hidden lg:block absolute right-12" src="Images/dotsx2.png" alt=""> 
+        </div>
+      </section>
+      
+      <!-- Featured Section  -->
+      <section class="bg-blue-100 py-12 px-24">
+        <h2 class="text-2xl lg:text-4xl font-bold text-center my-2 lg:my-3">Complete Care on Your Schedule</h2>
+        <h4 class="text-lg lg:text-xl font-semibold text-center my-2 lg:my-3">Bringing Life to Your Smile</h4>
+        <!-- Featured Card  -->
+        <div class="flex flex-col md:flex-row lg:flex-row justify-center gap-y-6 lg:gap-x-10 my-14">
+          <div>
+            <div class="w-52 lg:w-60 h-56 lg:h-72 bg-white py-4 lg:py-6 px-3 lg:px-6 flex flex-col items-center rounded-lg">
+              <span class="text-blue-600"><i class="fa-solid fa-user-doctor fa-2xl lg:fa-3x"></i></span>
+              <h6 class="text-base lg:text-lg font-semibold text-center my-3">Experienced Dentist​</h6>
+              <p class="text-sm lg:text-base text-center">We have treated more than 3000+ patients and better their situation.</p>
+            </div>
+          </div>
+  
+          <div>
+            <div class="w-52 lg:w-60 h-56 lg:h-72 bg-white py-4 lg:py-6 px-3 lg:px-6 flex flex-col items-center rounded-lg">
+              <span class="text-blue-600"><i class="fa-solid fa-tooth fa-2xl lg:fa-3x"></i></span>
+              <h6 class="text-base lg:text-lg font-semibold text-center my-3">Advance Treatment​​</h6>
+              <p class="text-sm lg:text-base text-center">We treat you painlessly through our advanced technology & providing a clean environment.</p>
+            </div>
+          </div>
+
+          <div>
+            <div class="w-52 lg:w-60 h-56 lg:h-72 bg-white py-4 lg:py-6 px-3 lg:px-6 flex flex-col items-center rounded-lg">
+              <span class="text-blue-600"><i class="fa-solid fa-handshake fa-2xl lg:fa-3x"></i></span>
+              <h6 class="text-base lg:text-lg font-semibold text-center my-3">Guaranteed Results​​</h6>
+              <p class="text-sm lg:text-base text-center">We provide 100% guaranteed result with friendly service, minimal charge & comfortable surrounding, every time.</p>
+            </div>
+          </div>
+          
+          <div>
+            <div class="w-52 lg:w-60 h-56 lg:h-72 bg-white py-4 lg:py-6 px-3 lg:px-6 flex flex-col items-center rounded-lg">
+              <span class="text-blue-600"><i class="fa-solid fa-microscope fa-2xl lg:fa-3x"></i></span>
+              <h6 class="text-base lg:text-lg font-semibold text-center my-3">Modern Equipment​</h6>
+              <p class="text-sm lg:text-base text-center">We used modern equipments & facilities like CEREC technology, Intra-oral camera, Laser dentistry, Sedation dentistry.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Images Row  -->
+      <!-- For Small Devices -->
+      <section id="service" class=" mx-4 pt-8 flex flex-col justify-center items-center m-auto md:hidden lg:hidden">
+          
+          <div class="flex flex-col px-4 my-3">
+            <h2 class="text-xl font-bold my-1">Various Services That We Offered</h2>
+            <p class="text-slate-500 font-semibold">
+              We Have All Your Dental Needs Covered
+              & offered more than 14+ treatments
+            </p>
+          </div>
+          
+          <div class="flex m-auto">
+            <div class="">
+              <div class="text-white px-3 py-4 w-48 h-[15rem] bg-[url('Images/Service_1.png')] bg-no-repeat">
+                <p class="text-base font-semibold">1.</p>
+                <p class="text-base font-semibold">Surgery of impacted 3rd Molar</p>
+                <p class="text-slate-100 my-4 text-xs">We do Surgery for the last teeth which is hidden under gingiva or bellow occlusal level.</p>
+              </div>
+            </div>
+            
+            <div>
+              <div class="text-white px-3 py-4 w-48 h-[15rem] bg-[url('Images/Service_2.png')] bg-no-repeat">
+                <p class="text-base font-semibold">2.</p>
+                <p class="text-base font-semibold">Prosthesis of missing teeth</p>
+                <p class="text-slate-100 my-4 text-xs">Complete denture for all missing teeth and removable partial denture for some missing teeth.</p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="flex m-auto">
+            <div class="">
+              <div class="text-white px-3 py-4 w-48 h-[15rem] bg-[url('Images/Service_3.png')] bg-no-repeat">
+                <p class="text-base font-semibold">3.</p>
+                <p class="text-base font-semibold">Root Canal Treatment</p>
+                <p class="text-slate-100 my-4 text-xs">Removing the pulp of teeth and filling it with Gutta purcha. It’s a method for saving cariously exposed tooth.</p>
+              </div>
+            </div>
+            
+            <div>
+              <div class="text-white px-3 py-4 w-48 h-[15rem] bg-[url('Images/Service_4.png')] bg-no-repeat">
+                <p class="text-base font-semibold">4.</p>
+                <p class="text-base font-semibold">Orthodontic Healing</p>
+                <p class="text-slate-100 my-4 text-xs">For Spacing in teeth, wrong bite, teeth overlaps with each other, Severe inclined or proclined teeth and various cases we do Ortho Treatment. </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex m-auto">
+            <div class="">
+              <div class="text-white px-3 py-4 h-[15rem] w-48 bg-[url('Images/Service_5.png')] bg-no-repeat">
+                <p class="text-base font-semibold">5.</p>
+                <p class="text-base font-semibold">Smile Designing</p>
+                <p class="text-slate-100 my-4 text-xs">If you have space in teeth and rotated teeth or broken teeth which affect your smile we can bring back your health smile again.</p>
+              </div>
+            </div>
+  
+            <div>
+              <div class="text-white px-3 py-6 h-[15rem] w-48 bg-[url('Images/Service_6.png')] bg-no-repeat">
+                <p class="text-base font-semibold">6.</p>
+                <p class="text-base font-semibold">Extractions</p>
+                <p class="text-slate-100 my-4 text-xs">Painless Extraction for anterior teeth starts from Rs 300 only & for 3rd molar impaction 1k only.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex m-auto">
+            <div class="">
+              <div class="text-white px-3 py-4 h-[15rem] w-48 bg-[url('Images/Service_7.png')] bg-no-repeat">
+                <p class="text-base font-semibold">7.</p>
+                <p class="text-base font-semibold">Teeth Whitening​</p>
+                <p class="text-slate-100 my-4 text-xs">Depending on case Vinner or Bleaching should be done for a white glowing smile.
+                </p>
+              </div>
+            </div>
+            
+            <div>
+              <div class="text-white px-3 py-6 h-[15rem] w-48 bg-[url('Images/Service_8.png')] bg-no-repeat">
+                <p class="text-base font-semibold">8.</p>
+                <p class="text-base font-semibold">Braces & Implants​</p>
+                <p class="text-slate-100 my-4 text-xs">For Missing teeth Implant is done to drill in the bone & fix teeth in the bony socket. It’s a long term treatment.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-6 py-8 bg-blue-500 w-full flex flex-col justify-center my-6">
+            <p class="text-slate-100 text-sm font-bold">
+              FOR ANY QUERY
+            </p>
+            <h2 class="text-lg font-bold text-white">Call us :- 8926391131 / 9153176655</h2>
+          </div>
+
+      </section>
+
+      <!-- For Large devices  -->
+      <section id="services" class="hidden md:flex py-12 px-24 lg:flex  flex-col justify-center items-center w-[80%] m-auto ">
+        <!-- Images Row 1  -->
+        <div class="flex m-auto">
+          <div class="w-[50%] flex flex-col px-8 content-end">
+            <h2 class="text-3xl font-bold my-4 ">Various Services That We Offered</h2>
+            <p class="text-slate-500 text-lg font-bold">
+              We Have All Your Dental Needs Covered
+              & offered more than 14+ treatments
+            </p>
+          </div>
+          
+          <div class="w-1/2 flex">
+            <div class=" h-[17rem] bg-[url('Images/Service_1.png')] bg-no-repeat">
+              <div class="text-white px-3 py-6 w-60">
+                <p class="text-lg font-semibold">1.</p>
+                <p class="text-lg font-semibold">Surgery of impacted 3rd Molar</p>
+                <p class="text-slate-100 my-4 text-sm">We do Surgery for the last teeth which is hidden under gingiva or bellow occlusal level.</p>
+              </div>
+            </div>
+            
+            <div class=" h-[17rem] bg-[url('Images/Service_2.png')] bg-no-repeat">
+              <div class="text-white px-3 py-6 w-60">
+                <p class="text-lg font-semibold">2.</p>
+                <p class="text-lg font-semibold">Prosthesis of missing teeth</p>
+                <p class="text-slate-100 my-4 text-sm">Complete denture for all missing teeth and removable partial denture for some missing teeth.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Images Row 2  -->
+        <div class="flex">
+          <div class=" h-[17rem] bg-[url('Images/Service_3.png')] bg-no-repeat">
+            <div class="text-white px-3 py-6 w-60">
+              <p class="text-lg font-semibold">3.</p>
+              <p class="text-lg font-semibold">Root Canal Treatment</p>
+              <p class="text-slate-100 my-4 text-sm">Removing the pulp of teeth and filling it with Gutta purcha. It’s a method for saving cariously exposed tooth.</p>
+            </div>
+          </div>
+          
+          <div class=" h-[17rem] bg-[url('Images/Service_4.png')] bg-no-repeat">
+            <div class="text-white px-3 py-6 w-60">
+              <p class="text-lg font-semibold">4.</p>
+              <p class="text-lg font-semibold">Orthodontic Healing</p>
+              <p class="text-slate-100 my-4 text-sm">For Spacing in teeth, wrong bite, teeth overlaps with each other, Severe inclined or proclined teeth and various cases we do Ortho Treatment. </p>
+            </div>
+          </div>
+
+          <div class=" h-[17rem] bg-[url('Images/Service_5.png')] bg-no-repeat">
+            <div class="text-white px-3 py-6 w-60">
+              <p class="text-lg font-semibold">5.</p>
+              <p class="text-lg font-semibold">Smile Designing</p>
+              <p class="text-slate-100 my-4 text-sm">If you have space in teeth and rotated teeth or broken teeth which affect your smile we can bring back your health smile again.</p>
+            </div>
+          </div>
+
+          <div class=" h-[17rem] bg-[url('Images/Service_6.png')] bg-no-repeat">
+            <div class="text-white px-3 py-6 w-60">
+              <p class="text-lg font-semibold">6.</p>
+              <p class="text-lg font-semibold">Extractions</p>
+              <p class="text-slate-100 my-4">Painless Extraction for anterior teeth starts from Rs 300 only & for 3rd molar impaction 1k only.</p>
+            </div>
+          </div>
+        </div>
+          <!-- Images Row 3  -->
+        <div class="flex m-auto px-7">
+                  
+          <div class="flex">
+            <div class=" h-[17rem] bg-[url('Images/Service_7.png')] bg-no-repeat">
+              <div class="text-white px-3 py-6 w-60">
+                <p class="text-lg font-semibold">7.</p>
+                <p class="text-lg font-semibold">Teeth Whitening​</p>
+                <p class="text-slate-100 my-4 text-sm">Depending on case Vinner or Bleaching should be done for a white glowing smile.
+                </p>
+              </div>
+            </div>
+            
+            <div class=" h-[17rem] bg-[url('Images/Service_8.png')] bg-no-repeat">
+              <div class="text-white px-3 py-6 w-60">
+                <p class="text-lg font-semibold">8.</p>
+                <p class="text-lg font-semibold">Braces & Implants​</p>
+                <p class="text-slate-100 my-4 text-sm">For Missing teeth Implant is done to drill in the bone & fix teeth in the bony socket. It’s a long term treatment.</p>
+              </div>
+            </div>
+        
+          <div class="w-[30rem] px-14 bg-blue-500 flex flex-col justify-center rounded-br-full">
+            <p class="text-slate-100 text-sm font-bold">
+              FOR ANY QUERY
+            </p>
+            <h2 class="text-lg font-bold text-white">Call us :- 8926391131 / 9153176655</h2>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section  -->
+      <!-- For Small Devices  -->
+      <section id="review" class="w-full bg-blue-100 my-10 lg:hidden">
+        <h3 class="text-lg lg:text-3xl font-bold text-center py-2">Result After Treatment</h3>
+        <div class="w-[80%] m-auto flex items-center lg:flex-row lg:gap-x-4 lg:py-10 py-6 gap-x-4 ">
+          <img class="max-w-[45%] lg:w-full" src="/Images/Testimonial_1.png" alt="">
+          <img class="max-w-[45%] lg:w-full" src="/Images/Testimonial_2.png" alt="">
+        </div>
+        <div class="w-[80%] m-auto flex items-center lg:flex-row lg:gap-x-4 lg:py-10 py-2 gap-x-4">
+          <img class="max-w-[45%] lg:w-full" src="/Images/Testimonial_3.png" alt="">
+          <img class="max-w-[45%] lg:w-full" src="/Images/Testimonial_4.png" alt="">
+        </div>
+        <p class="text-sm lg:text-base italic text-slate-600 text-center px-8 py-10">To see more testimonial visit our facebook page 👉 <a class="underline hover:text-blue-900" href="https://www.facebook.com/profile.php?id=100070483394854" target="_blank">Happy Smile Dental Clinic</a></p>
+      </section>
+
+      <!-- For Large Devices  -->
+      <section id="reviews" class="w-full bg-blue-100 my-10 hidden lg:block">
+        <h3 class="text-3xl font-bold text-center py-2">Result After Treatment</h3>
+        <div class="w-[80%] m-auto flex items-center lg:flex-row lg:gap-x-4 lg:py-10 py-6 gap-x-4 ">
+          <img class="max-w-[45%] lg:w-full" src="/Images/Testimonial_1.png" alt="">
+          <img class="max-w-[45%] lg:w-full" src="/Images/Testimonial_2.png" alt="">
+          <img class="max-w-[45%] lg:w-full" src="/Images/Testimonial_3.png" alt="">
+          <img class="max-w-[45%] lg:w-full" src="/Images/Testimonial_4.png" alt="">
+        </div>
+        <p class="text-sm lg:text-base italic text-slate-600 text-center px-8 py-10">To see more testimonial visit our facebook page 👉 <a class="underline hover:text-blue-900" href="https://www.facebook.com/profile.php?id=100070483394854" target="_blank">Happy Smile Dental Clinic</a></p>
+      </section>
+
+      <!-- Feedback Section  -->
+      <section class="bg-white py-8">
+        <!-- Feedback Boxes  -->
+        <!-- Small Devices  -->
+        <div class="w-[80%] m-auto p-4 lg:hidden lg:justify-evenly">
+          <div class="w-60 h-60">
+            <h3 class="text-2xl font-bold text-center my-3">Happy Stories</h3>
+            <p class="text-sm text-center my-3">Creating Vibrant Smiles for Healthy Lifestyles!</p>
+            <img class="w-40 m-auto" src="/Images/happy.jpg" alt="">
+          </div>
+
+          <div class="flex flex-col gap-y-4">
+            <div class="bg-blue-50 w-72 px-4 py-9 shadow-xl">
+              <p class="text-xs italic">Clean environment and modern chamber. I am very happy with their services. Dr. Mondal is very humble and knowledgeable person. I personally recommend Happy smile dental clinic for any oral and maxillofacial problem.</p>
+              <h6 class="text-sm font-semibold mt-5 mb-2">Nasrin Mondal</h6>
+            </div>
+  
+            <div class="bg-blue-50 w-72 px-4 py-9 shadow-xl">
+              <p class="text-xs italic">The best destination for your dental health. I am glad and pleased about having a such doctor's clinic near my locality. You should check it out as per your requirement.</p>
+              <h6 class="text-sm font-semibold mt-5 mb-2">Nuruddin Mondal</h6>
+            </div>
+  
+            <div class="bg-blue-50 w-72 px-4 py-9 shadow-xl">
+              <p class="text-xs italic">
+                The best place for dental treatment. The doctor is very polite and has advanced knowledge. Hygiene is maintained very well. I am very happy with his treatment. Thank you happy smile.</p>
+              <h6 class="text-sm font-semibold mt-5 mb-2">Nibedita Nandi</h6>
+            </div>
+  
+            <div class="bg-blue-50 w-72 px-4 py-9 shadow-xl">
+              <p class="text-xs italic">
+                I had a great experience at the HAPPY SMILE DENTAL CLINIC . Dr.MONDAL was very friendly ,professional and knowledgeable .Thank you for your great service.</p>
+              <h6 class="text-sm font-semibold mt-5 mb-2">Anisha Dutta</h6>
+            </div>
+  
+            <div class="bg-blue-50 w-72 px-4 py-9 shadow-xl">
+              <p class="text-xs italic">Polite, well mannered Doctor with good clinical evaluation skills. Shows a lot of patience and compassion with patients of all age groups. Highly recommended for state of the art dental .
+              </p>
+              <h6 class="text-sm font-semibold mt-5 mb-2">Dr. Soham Ghosh</h6>
+            </div>
+          </div>
+        </div>
+        <!-- For large devices  -->
+        <div class="hidden md:flex w-[80%] m-auto p-4 lg:flex justify-evenly">
+          <div class="box-1st">
+            <div class="w-60 h-60">
+              <h3 class="text-2xl font-bold">Happy Stories</h3>
+              <p class="text-sm">Creating Vibrant Smiles for Healthy <br> Lifestyles!</p>
+              <img class="z-10 w-40" src="/Images/happy.jpg" alt="">
+            </div>
+            <div class="bg-blue-50 w-72 px-4 py-12 shadow-xl z-20">
+              <p class="text-xs italic">Clean environment and modern chamber. I am very happy with their services. Dr. Mondal is very humble and knowledgeable person. I personally recommend Happy smile dental clinic for any oral and maxillofacial problem.</p>
+              <h6 class="text-sm font-semibold mt-5 mb-2">Nasrin Mondal</h6>
+            </div>
+          </div>
+
+          <div class="box-2nd flex flex-col justify-between">
+            <div class="bg-blue-50 w-72 px-4 py-12 shadow-xl z-20">
+              <p class="text-xs italic">The best destination for your dental health. I am glad and pleased about having a such doctor's clinic near my locality. You should check it out as per your requirement.</p>
+              <h6 class="text-sm font-semibold mt-5 mb-2">Nuruddin Mondal</h6>
+            </div>
+
+            <div class="bg-blue-50 w-72 px-4 py-12 shadow-xl z-20 ">
+              <p class="text-xs italic">
+                The best place for dental treatment. The doctor is very polite and has advanced knowledge. Hygiene is maintained very well. I am very happy with his treatment. Thank you happy smile.</p>
+              <h6 class="text-sm font-semibold mt-5 mb-2">Nibedita Nandi</h6>
+            </div>
+          </div>
+
+          <div class="box-3rd flex flex-col justify-between">
+            <div class="bg-blue-50 w-72 px-4 py-12 shadow-xl z-20">
+              <p class="text-xs italic">
+                I had a great experience at the HAPPY SMILE DENTAL CLINIC . Dr.MONDAL was very friendly ,professional and knowledgeable .Thank you for your great service.</p>
+              <h6 class="text-sm font-semibold mt-5 mb-2">Anisha Dutta</h6>
+            </div>
+
+            <div class="bg-blue-50 w-72 px-4 py-12 shadow-xl z-20">
+              <p class="text-xs italic">Polite, well mannered Doctor with good clinical evaluation skills. Shows a lot of patience and compassion with patients of all age groups. Highly recommended for state of the art dental .
+              </p>
+              <h6 class="text-sm font-semibold mt-5 mb-2">Dr. Soham Ghosh</h6>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Location  -->
+      <section id="call">
+        <h4 class="text-center text-xl lg:text-3xl my-4 font-bold">How To Find Us</h4>
+        <div class="bg-blue-600 flex flex-col lg:flex-row justify-center items-center lg:justify-evenly py-14 my-8">
+          <div class="text-white flex justify-between lg:items-center py-2 lg:py-4  ml-6">
+            <span class="bg-[#d2edff2e] rounded-full w-10 h-10 flex justify-center items-center mx-3"><i class="fa-solid fa-map-location-dot"></i></span>
+            <div>
+              <p class="text-base lg:text-xl">Address</p>
+              <p class="text-xs lg:text-sm">Tahaj Medical Hall, kalna-1, WB, India <br>
+                West Bengal, India 713409</p> 
+            </div>
+          </div>
+          
+          <div class="text-white flex justify-between lg:items-center py-4 ml-[13px]">
+            <span class="bg-[#d2edff2e] rounded-full w-10 h-10 flex justify-center items-center mx-2"><i class="fa-solid fa-mobile-screen-button"></i></span>
+            <div>
+              <p class="text-base lg:text-xl">Phone</p>
+              <p class="text-xs lg:text-sm">+916297524875 /
+                +918768610974</p> 
+            </div>
+          </div>
+
+          <div class="text-white flex justify-between lg:items-center py-4">
+            <span class="bg-[#d2edff2e] rounded-full w-10 h-10 flex justify-center items-center mx-3"><i class="fa-solid fa-envelope"></i></span>
+            <div>
+              <p class="text-base lg:text-xl">Email</p>
+              <p class="text-xs lg:text-sm">imranmondal26808@gmail.com</p> 
+            </div>
+          </div>
+        </div>
+        <div class="m-auto flex justify-center items-center my-6">
+          <button onclick="openMap()" class=" relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+            <span class="flex items-center gap-x-2 relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                <span><i class="fa-solid fa-location-dot"></i></span>
+                <p>View On Google Map</p>
+            </span>
+          </button>
+        </div>
+        <div class="my-4">
+          <img src="/Images/Map.png" alt="HappySmile">
+        </div>
+      </section>
+    </main>
+
+    <footer class="w-full px-12 py-10 bg-[#1D3157] text-white">
+      <div class="text-slate-300 underline text-sm text-right animate-bounce my-2"><a href="#home" >Back To Top </a></div>
+      <section class="w-full lg:m-auto flex flex-col lg:flex-row lg:justify-between ">
+        <p class="sm:text-center">Copyright © 2022 HappySmile | Powered by <a class="text-yellow-300 hover:underline hover:text-yellow-600" href="https://skriponux.com" target="_blank">RitsUX.coder</a> aka Sk Ripon</p>
+        <div class="flex items-center justify-center lg:gap-x-7 lg:content-end lg:ml-96 mt-5 gap-x-4">
+          <a href="https://github.com/MyselfRipon20/" target="_blank" class="hover:text-green-500"><i class="fa-brands fa-github fa-xl"></i></span>
+          <a href="https://www.linkedin.com/in/sk-ripon-a82a7b222/" target="_blank" class="hover:text-blue-400"><i class="fa-brands fa-linkedin-in fa-xl"></i></span>
+          <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" class="hover:text-fuchsia-300"><i class="fa-regular fa-envelope fa-xl"></i></span>
+          <a href="https://twitter.com/myself_ripon/" target="_blank" class="hover:text-sky-400"><i class="fa-brands fa-twitter fa-xl"></i></span>
+        </div>
+      </section>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+  </body>
+</html>
